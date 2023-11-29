@@ -4,7 +4,42 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>SimpleBackup</Title>
+    <Version>0.0.1</Version>
+    <Authors>Julian Bechtold</Authors>
+    <Description>SimpleBlackup is an easy to use, simple and lightweight backup and restore library for creating and restoring file backups.
+supports plain, compressed and encrypted backups.</Description>
+    <Copyright>MIT-Modern-Variant</Copyright>
+    <PackageIcon>SimplebackupLogo.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/forReason/SimpleBackup</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>backup;restore;compression;encryption</PackageTags>
+    <PackageReleaseNotes>initial release</PackageReleaseNotes>
+    <PackageOutputPath>Y:\Projects\Programmbibliotheken\LocalNugetPackages</PackageOutputPath>
+    <PackageLicenseExpression> MIT-Modern-Variant</PackageLicenseExpression>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
   </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>embedded</DebugType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>embedded</DebugType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\SimplebackupLogo.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="FlowEncrypt" Version="1.0.4" />
