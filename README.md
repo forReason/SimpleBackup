@@ -1,4 +1,6 @@
 # SimpleBackup
+<img src="https://raw.githubusercontent.com/forReason/SimpleBackup/master/SimplebackupLogo.png" width="200" height="200">
+
 SimpleBlackup is an easy to use, simple and lightweight backup and restore library with the following functions:
 
 - Define Source, Backup and Restore Folders
