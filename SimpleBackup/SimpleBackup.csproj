@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Title>SimpleBackup</Title>
-    <Version>0.1.0</Version>
+    <Version>0.1.1</Version>
     <Authors>Julian Bechtold</Authors>
     <Description>SimpleBlackup is an easy to use, simple and lightweight backup and restore library for creating and restoring file backups.
 supports plain, compressed and encrypted backups.</Description>
@@ -16,7 +16,8 @@ supports plain, compressed and encrypted backups.</Description>
     <RepositoryUrl>https://github.com/forReason/SimpleBackup</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>backup;restore;compression;encryption</PackageTags>
-    <PackageReleaseNotes>0.1.0 add individual file backup
+    <PackageReleaseNotes>0.1.1 fix cleanup of individual backup files
+0.1.0 add individual file backup
 0.0.1 initial release</PackageReleaseNotes>
     <PackageOutputPath>Y:\Projects\Programmbibliotheken\LocalNugetPackages</PackageOutputPath>
     <PackageLicenseExpression> MIT-Modern-Variant</PackageLicenseExpression>
